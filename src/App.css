@@ -1,0 +1,19 @@
+.listsyle {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.inputstylefilter{
+  width: 90%;
+}
+
+.filtrstyle{
+  display: flex;
+    justify-content: space-between;
+}
+
+.frstyle{
+  display: flex;
+  
+}
