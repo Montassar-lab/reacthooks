@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
+import Rating from '@mui/material/Rating';
+
 
 function Addmovie({movies,setMovies}) {
 
@@ -59,12 +61,12 @@ function Addmovie({movies,setMovies}) {
 
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Label>rating</Form.Label>
-              <Form.Control
-                type="Text"
-                placeholder="rate it!"
-                onChange={(e)=>setRating(e.target.value) }
-                autoFocus
+              <Rating
+                name="simple-controlled"
+                
+                onChange={(e)=>setRating(e.target.value)}
               />
+
             </Form.Group>
 
           </Form>

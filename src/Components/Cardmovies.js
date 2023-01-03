@@ -1,5 +1,6 @@
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
+
+import {Card,Button} from 'react-bootstrap'
+import Rating from '@mui/material/Rating'
 import { useState } from 'react';
 
 const Cardmovies=({el, movies, setMovies})=>{
@@ -22,7 +23,7 @@ const Cardmovies=({el, movies, setMovies})=>{
                             
                             </Card.Text>
 
-                            <Card.Text>{el.rating}</Card.Text>
+                            <Rating name="read-only" value={el.rating} readOnly />
                             
                             <Button onClick={()=>handledelete(el.id)} variant="primary">DELETE</Button>
 
