@@ -2,6 +2,7 @@
 import {Card,Button} from 'react-bootstrap'
 import Rating from '@mui/material/Rating'
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Cardmovies=({el, movies, setMovies})=>{
 
@@ -13,7 +14,9 @@ const Cardmovies=({el, movies, setMovies})=>{
         <div>
 
                 <Card style={{ width: '18rem' }}>
+                <Link to={`/Descriptionpage/${el.id}`}>
                     <Card.Img variant="top" src={el.posterURL} style={{width :'286px',height:'310px'}} />
+                    </Link>
                         <Card.Body>
                             <Card.Title>{el.title}</Card.Title>
     

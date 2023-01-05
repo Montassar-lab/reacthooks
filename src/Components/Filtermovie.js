@@ -22,6 +22,7 @@ const Filtermovie =({titre,setTitre,etoile,setEtoile})=>{
               />
 
             <Rating value={etoile} name="simple-controlled" onChange={(e)=>setEtoile(e.target.value)}/>
+            
             <Button onClick={handlereset} variant="outline-warning">Reset</Button>{' '}
             
 
